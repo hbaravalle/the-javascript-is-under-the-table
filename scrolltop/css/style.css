@@ -1,0 +1,31 @@
+body {
+
+}
+
+main {
+  margin-top: 100px;
+}
+
+.elemento_prueba {
+  display: flex;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 40px;
+  background-color:#eaeaea;
+  margin-bottom: 20px;
+}
+
+.indice {
+  position:absolute;
+  display: flex;
+  height: 50px;
+  margin-top: calc(-50px/2);
+  margin-left: -150px;
+  align-items: center;
+  justify-content: center;
+  top: 500px;
+  z-index: 9999;
+  color: #d0d0d0;
+}

@@ -1,0 +1,14 @@
+/* Elementos  */
+
+#smLogo { transition: all 0.3s ease-in-out; }
+#smNavBar { height: 100px; transition: all 0.3s ease-in-out; }
+
+/* Tranfrom element to this: */
+
+#smLogo.scrollingMagic {
+  color: red!important;
+}
+
+#smNavBar.scrollingMagic {
+  height: 60px;
+}
