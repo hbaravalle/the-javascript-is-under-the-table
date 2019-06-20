@@ -1,0 +1,37 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  background-color: #0E0E0E;
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: center;
+  transition: all 1.6s ease-in-out;
+}
+
+#buttonLeft, #buttonRight {
+  position: fixed;
+  align-self: center;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+#buttonLeft > img, #buttonRight > img {
+  width: 40px;
+}
+
+#buttonLeft {
+  transform: scaleX(-1);
+  left: 30px;
+}
+
+#buttonRight {
+  right: 30px;
+}
