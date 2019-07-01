@@ -9,9 +9,11 @@ nav {
   z-index: 1000;
 }
 
-nav button.elMagicoBoton {
+nav nav button.elMagicoBoton {
   color: initial;
   background: none;
+  -webkit-transform: translateY(2px);
+  -ms-transform: translateY(2px);
   transform: translateY(2px);
   font-size: 15px;
   margin-left: 10px;
@@ -21,12 +23,18 @@ nav button.elMagicoBoton {
 main {
   width: 100%;
   height: calc(100vh - 56px);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
-h1 {
+main h1 {
   text-align: center;
   color: white;
   font-weight: 700;
@@ -34,7 +42,7 @@ h1 {
   z-index: 9999;
 }
 
-h2 {
+main h2 {
   position: absolute;
   margin-top: -3vw;
   color: #282C34;

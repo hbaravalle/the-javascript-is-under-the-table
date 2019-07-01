@@ -1,0 +1,49 @@
+$color-dark: #282C34;
+
+body {
+  background-color: $color-dark;
+  font-family: 'Libre Franklin', Arial, sans-serif;
+  overflow: hidden;
+}
+
+nav {
+  margin-top: 10px;
+  z-index: 1000;
+
+  nav button.elMagicoBoton {
+    color: initial;
+    background: none;
+    transform: translateY(2px);
+    font-size: 15px;
+    margin-left: 10px;
+    border-radius: 25px;
+  }
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 56px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 80px;
+    z-index: 9999;
+  }
+
+  h2 {
+    position: absolute;
+    margin-top: -3vw;
+    color: $color-dark;
+    font-size: 35vw;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-weight: 700;
+    opacity: 0.2;
+    z-index: 0;
+  }
+}

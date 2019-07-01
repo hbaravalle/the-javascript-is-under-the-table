@@ -1,6 +1,5 @@
 window.onload = () => {
 
-
   function debounce(unaFuncion, tiempo) {
     let timeoutId;
     return function() {
@@ -66,7 +65,5 @@ window.onload = () => {
       darkTheme.toggler();
     }
   })
-
-
 
 }
