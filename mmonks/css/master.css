@@ -12,7 +12,7 @@ main {
   background-repeat: no-repeat;
   background-position-x: 0;
   background-position-y: center;
-  transition: all 1.6s ease-in-out;
+  transition: all 1.3s ease-in-out;
 }
 
 #buttonLeft, #buttonRight {
@@ -21,6 +21,7 @@ main {
   color: #fff;
   font-size: 40px;
   cursor: pointer;
+  opacity: 1;
 }
 
 #buttonLeft > img, #buttonRight > img {
@@ -32,6 +33,14 @@ main {
   left: 30px;
 }
 
+#buttonLeft.disabled {
+  opacity: 0.4;
+}
+
 #buttonRight {
   right: 30px;
+}
+
+#buttonRight.disabled {
+  opacity: 0.4;
 }
