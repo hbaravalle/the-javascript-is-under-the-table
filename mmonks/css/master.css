@@ -12,7 +12,7 @@ main {
   background-repeat: no-repeat;
   background-position-x: 0;
   background-position-y: center;
-  transition: all 1.3s ease-in-out;
+  /* transition: all 1.3s ease-in-out; */
 }
 
 #buttonLeft, #buttonRight {
