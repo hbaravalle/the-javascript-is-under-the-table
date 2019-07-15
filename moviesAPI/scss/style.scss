@@ -1,0 +1,41 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+
+  nav {
+    background-color: none;
+
+    .navbar-brand {
+      font-family: 'Poppins', Arial, sans-serif;
+      font-weight: 700;
+    }
+  }
+}
+
+section.estrenos {
+  .carousel-inner {
+    display: flex;
+    min-height: 550px;
+    background-color: red;
+    align-items: center;
+
+    .carousel-item {
+      max-width: 50%;
+      padding: 0 60px;
+      &.active {
+
+      }
+      h2 {
+        font-family: 'Poppins', Arial, sans-serif;
+        font-weight: 700;
+      }
+      p {
+
+      }
+    }
+  }
+}
+
+section.populares {}
+section.top-ranked {}
+section.generos {}
+footer {}

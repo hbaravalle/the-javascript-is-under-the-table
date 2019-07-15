@@ -1,11 +1,11 @@
 window.onload = function() {
   fetch('https://api.themoviedb.org/3/movie/popular?api_key=81b468865772aad355fffbae68ca1383&language=es&page=1')
-
     .then(function(res) {
       return res.json();
     })
     .then(function(data) {
       let main = document.querySelector('main');
+      let containerPelis = document.querySelector('.populares');
       let pelis = data.results;
       console.log(pelis);
 
@@ -21,14 +21,18 @@ window.onload = function() {
           estreno: pelis[i].release_date
         }
 
-        let markup 0 = `
+        let markup = `
           <article class="card-pelicula">
-            <img src="" alt="">
+            <img src="https://image.tmdb.org/t/p/w500/${unaPeli.poster}" alt="${unaPeli.titulo}">
+            <img src="https://image.tmdb.org/t/p/w500/${unaPeli.backdrop}" alt="${unaPeli.titulo}">
             <h2>${unaPeli.titulo}</h2>
             <span>ranking</span>
           </article>
-        `
+        `;
+        
+        containerPelis.innerHTML += markup;
+
       }
-    })
+    });
 
 }
