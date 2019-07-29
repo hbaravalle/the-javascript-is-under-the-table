@@ -1,0 +1,18 @@
+// -------------------------------
+// » Helpers
+// -------------------------------
+
+$theRatio: 1.618; // Golden ratio or die
+
+// -------------------------------
+// » Textos
+// -------------------------------
+
+$fontSize-sm: 1rem; // Default
+
+$fontSize-xs: $fontSize-sm / $theRatio;
+$fontSize-md: $fontSize-sm * $theRatio;
+$fontSize-lg: $fontSize-md * $theRatio;
+$fontSize-xl: $fontSize-lg * $theRatio;
+$fontSize-2xl: $fontSize-xl * $theRatio;
+$fontSize-3xl: $fontSize-2xl * $theRatio;

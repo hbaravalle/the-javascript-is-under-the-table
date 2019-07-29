@@ -1,0 +1,111 @@
+// -------------------------------
+// » Textos
+// -------------------------------
+
+.outline {
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  font-weight: 700;
+}
+
+h2 { font-size: $fontSize-2xl; }
+h3 { font-size: $fontSize-xl }
+h4 { font-size: $fontSize-lg }
+h5 { font-size: $fontSize-md }
+p { font-size: $fontSize-sm }
+small { font-size: $fontSize-xs; }
+
+body {
+  font-size: 18px;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f0f0f0;
+
+  nav.navbar {
+    font-size: $fontSize-sm;
+    display: flex!important;
+    justify-content: space-between!important;
+
+    ul {
+      text-transform: uppercase;
+    }
+
+    .navbar-brand {
+      font-family: 'Poppins', Arial, sans-serif;
+      font-weight: 600;
+    }
+  }
+  .navbar-collapse {
+    flex-grow: 0; // Cambiar en queries
+  }
+}
+
+section.carousel-estrenos {
+  background-color: red;
+
+  .carousel-inner {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+
+    .carousel-item {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 550px;
+      padding: 0 60px;
+      background: blue;
+
+      .__text-combo {
+        color: #fff;
+
+        h2 {
+          font-family: 'Poppins', sans-serif;
+          font-weight: 700;
+        }
+        p {
+
+        }
+      }
+
+    }
+  }
+}
+
+section.proximamente {
+  transform: translateY(-90px);
+  z-index: 9999;
+
+  & > h5 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .__card-pelicula {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #fff;
+    margin-bottom: 30px;
+
+    background-image: url('../img/backdrop.jpg');
+    background-position: center;
+    background-size: cover;
+
+    .__text-combo {
+      color: #fff;
+      background: -moz-linear-gradient(180deg, rgba(0,0,0,0) 27%, rgba(0,0,0,0.7) 100%);
+      background: -webkit-linear-gradient(180deg, rgba(0,0,0,0) 27%, rgba(0,0,0,0.7) 100%);
+      background: linear-gradient(180deg, rgba(0,0,0,0) 27%, rgba(0,0,0,0.7) 100%);
+      padding: 15px 20px;
+      padding-top: 70px;
+    }
+  }
+}
+
+section.populares {}
+section.top-ranked {}
+section.generos {}
+footer {}

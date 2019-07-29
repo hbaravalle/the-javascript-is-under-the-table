@@ -29,7 +29,7 @@ window.onload = function() {
             <span>ranking</span>
           </article>
         `;
-        
+
         containerPelis.innerHTML += markup;
 
       }
