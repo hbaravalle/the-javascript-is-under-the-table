@@ -1,0 +1,29 @@
+$color-de-la-empresa: red;
+
+h1 {
+  color: red;
+  background: $color-de-la-empresa;
+}
+
+ul {
+  padding-left: 0;
+  background-color: $color-de-la-empresa;
+
+  li {
+    list-style-type: none;
+    font-family: Arial, sans-serif;
+
+    a {
+      text-decoration: none;
+      color: $color-de-la-empresa;
+
+      &.active {
+        text-decoration: underline;
+      }
+
+      &.inactive {
+        
+      }
+    }
+  }
+}
